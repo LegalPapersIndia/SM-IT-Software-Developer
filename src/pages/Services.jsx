@@ -11,6 +11,7 @@ import service9 from "../assets/service9.jpg";
 import service7 from "../assets/service7.jpg";
 import service8 from "../assets/service8.jpg";
 import service10 from "../assets/service10.jpg";
+import CTASection from "../components/CTASection";
 
 import {
   Search,
@@ -199,7 +200,7 @@ const ServicesPage = () => {
       </section>
 
       {/* ================= PROCESS ================= */}
-      <section className="py-20 bg-gray-900">
+      {/* <section className="py-20 bg-gray-900">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-white">
             Our Process
@@ -234,7 +235,10 @@ const ServicesPage = () => {
             </motion.div>
           ))}
         </div>
-      </section>
+      </section> */}
+
+        {/* ================= CTA ================= */}
+      <CTASection />
     </div>
   );
 };
