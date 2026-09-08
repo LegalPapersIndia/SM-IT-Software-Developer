@@ -562,16 +562,19 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-6 flex justify-between items-center">
         {/* Logo */}
        {/* Logo */}
-<Link to="/" className="flex items-center gap-3">
-  <div className="bg-white rounded-lg px-2 py-1 shadow-md">
+{/* Logo */}
+<Link to="/" className="flex items-center gap-2 sm:gap-3">
+  <div className="bg-white rounded-lg px-1.5 py-1 sm:px-2 sm:py-1 shadow-md">
     <img
       src={logo}
       alt="SM IT Software and Solutions"
-      className={`${scrolled ? "h-7" : "h-9"} w-auto object-contain transition-all duration-300`}
+      className={`${
+        scrolled ? "h-6 sm:h-7" : "h-7 sm:h-9"
+      } w-auto object-contain transition-all duration-300`}
     />
   </div>
   <span
-    className={`font-serif text-lg md:text-xl font-semibold tracking-wide ${
+    className={`hidden sm:inline font-serif text-lg md:text-xl font-semibold tracking-wide ${
       scrolled ? "text-gray-200" : "text-white"
     }`}
   >
