@@ -400,7 +400,7 @@ const ContactUs = () => {
                 {
                   icon: <FaMapMarkerAlt className="text-blue-500 mt-1" />,
                   label: "Office Address",
-                  value: "Noida Sector 8",
+                  value: "Office A-6 Karan woodz society warje pune-411058",
                 },
                 {
                   icon: <FaEnvelope className="text-blue-500 mt-1" />,
@@ -467,12 +467,12 @@ const ContactUs = () => {
         transition={{ duration: 0.7 }}
         className="w-full h-[400px]"
       >
-        <iframe
-          title="Office Location"
-          src="https://www.google.com/maps?q=Emerald%20House%20SD%20Road%20Secunderabad&output=embed"
-          className="w-full h-full border-0"
-          loading="lazy"
-        ></iframe>
+       <iframe
+  title="Office Location"
+  src="https://www.google.com/maps?q=A-6%20Karan%20Woodz%20Society%20Warje%20Pune%20411058&output=embed"
+  className="w-full h-full border-0"
+  loading="lazy"
+></iframe>
       </motion.div>
     </div>
   );

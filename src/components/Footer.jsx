@@ -227,7 +227,7 @@ const Footer = () => {
           <div className="space-y-3 text-sm">
             <div className="flex items-center gap-3">
               <FaMapMarkerAlt className="text-blue-400" />
-              <p>Noida Sector-8, India</p>
+              <p>Office A-6 Karan woodz society warje pune-411058</p>
             </div>
 
             <div className="flex items-center gap-3">
