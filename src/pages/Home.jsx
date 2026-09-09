@@ -30,7 +30,7 @@ import WhyChooseUs from "../components/WhyChooseUs";
 import CaseStudies from "../components/CaseStudies";
 import Industries from "../components/Industries";
 import Technologies from "../components/Technologies";
-import Testimonials from "../components/Testimonials";
+// import Testimonials from "../components/Testimonials";
 import FAQ from "../components/FAQ";
 import CTASection from "../components/CTASection";
 import DirectorMessage from "../components/DirectorMessage";
@@ -46,7 +46,7 @@ const Home = () => {
       <CaseStudies />
       <Industries />
       <Technologies />
-      <Testimonials />
+      {/* <Testimonials /> */}
       <FAQ />
         <DirectorMessage />
       <CTASection />
