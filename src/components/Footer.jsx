@@ -1,3 +1,5 @@
+
+
 // import React from "react";
 // import { Link } from "react-router-dom";
 // import {
@@ -10,6 +12,8 @@
 //   FaEnvelope,
 // } from "react-icons/fa";
 
+// import logo from "../assets/sm-it-logo.png";
+
 // const Footer = () => {
 //   return (
 //     <footer className="bg-gray-950 text-gray-300 pt-16 pb-8">
@@ -17,9 +21,19 @@
 
 //         {/* Company Info */}
 //         <div>
-//           <h2 className="text-2xl font-bold text-white mb-4">
-//              SM IT Software Developer
-//           </h2>
+//           <div className="flex items-center gap-3 mb-4">
+//             <div className="bg-white rounded-lg px-2 py-1 shadow-md">
+//               <img
+//                 src={logo}
+//                 alt="SM IT Software and Solutions"
+//                 className="h-8 w-auto object-contain"
+//               />
+//             </div>
+//             <span className="font-serif text-lg font-semibold tracking-wide text-white">
+//               IT Software <span className="text-blue-400">&</span> Solutions
+//             </span>
+//           </div>
+
 //           <p className="text-gray-400 mb-4">
 //             We deliver innovative IT solutions to help businesses grow,
 //             scale, and succeed in the digital world.
@@ -93,7 +107,7 @@
 //           <div className="space-y-3 text-sm">
 //             <div className="flex items-center gap-3">
 //               <FaMapMarkerAlt className="text-blue-400" />
-//               <p>Noida Sector-8, India</p>
+//               <p>Office A-6 Karan woodz society warje pune-411058</p>
 //             </div>
 
 //             <div className="flex items-center gap-3">
@@ -111,7 +125,7 @@
 //       </div>
 
 //       <div className="border-t border-white/10 mt-10 pt-6 text-center text-sm text-gray-500">
-//         © {new Date().getFullYear()}   SM IT Software Developer. All rights reserved.
+//         © {new Date().getFullYear()} SM IT Software and Solutions. All rights reserved.
 //       </div>
 //     </footer>
 //   );
@@ -120,16 +134,17 @@
 // export default Footer;
 
 
+
+
 import React from "react";
 import { Link } from "react-router-dom";
 import {
   FaFacebookF,
-  FaTwitter,
-  FaLinkedinIn,
   FaInstagram,
   FaMapMarkerAlt,
   FaPhoneAlt,
   FaEnvelope,
+  FaGlobe,
 } from "react-icons/fa";
 
 import logo from "../assets/sm-it-logo.png";
@@ -160,16 +175,20 @@ const Footer = () => {
           </p>
 
           <div className="flex gap-3">
-            {[FaFacebookF, FaTwitter, FaLinkedinIn, FaInstagram].map(
-              (Icon, i) => (
-                <div
-                  key={i}
-                  className="w-9 h-9 flex items-center justify-center bg-white/10 rounded-full hover:bg-blue-800 transition cursor-pointer"
-                >
-                  <Icon className="text-sm" />
-                </div>
-              )
-            )}
+            {[
+              { Icon: FaFacebookF, url: "https://www.facebook.com/profile.php?id=61594582824094" },
+              { Icon: FaInstagram, url: "https://www.instagram.com/santosh_marne94/" },
+            ].map(({ Icon, url }, i) => (
+              <a
+                key={i}
+                href={url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-9 h-9 flex items-center justify-center bg-white/10 rounded-full hover:bg-blue-800 transition cursor-pointer"
+              >
+                <Icon className="text-sm" />
+              </a>
+            ))}
           </div>
         </div>
 
@@ -239,6 +258,30 @@ const Footer = () => {
               <FaEnvelope className="text-blue-400" />
               <p>santoshmarnenew@gmail.com</p>
             </div>
+
+            <div className="flex items-center gap-3">
+              <FaGlobe className="text-blue-400" />
+              <a
+                href="https://smagroandclothes.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-blue-400 transition"
+              >
+                smagroandclothes.com
+              </a>
+            </div>
+
+            <div className="flex items-center gap-3">
+              <FaGlobe className="text-blue-400" />
+              <a
+                href="https://smitsoftwareandsolutions.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-blue-400 transition"
+              >
+                smitsoftwareandsolutions.com
+              </a>
+            </div>
           </div>
         </div>
 
@@ -252,3 +295,7 @@ const Footer = () => {
 };
 
 export default Footer;
+
+
+
+
