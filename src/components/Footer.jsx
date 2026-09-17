@@ -4,12 +4,11 @@
 // import { Link } from "react-router-dom";
 // import {
 //   FaFacebookF,
-//   FaTwitter,
-//   FaLinkedinIn,
 //   FaInstagram,
 //   FaMapMarkerAlt,
 //   FaPhoneAlt,
 //   FaEnvelope,
+//   FaGlobe,
 // } from "react-icons/fa";
 
 // import logo from "../assets/sm-it-logo.png";
@@ -40,16 +39,20 @@
 //           </p>
 
 //           <div className="flex gap-3">
-//             {[FaFacebookF, FaTwitter, FaLinkedinIn, FaInstagram].map(
-//               (Icon, i) => (
-//                 <div
-//                   key={i}
-//                   className="w-9 h-9 flex items-center justify-center bg-white/10 rounded-full hover:bg-blue-800 transition cursor-pointer"
-//                 >
-//                   <Icon className="text-sm" />
-//                 </div>
-//               )
-//             )}
+//             {[
+//               { Icon: FaFacebookF, url: "https://www.facebook.com/profile.php?id=61594582824094" },
+//               { Icon: FaInstagram, url: "https://www.instagram.com/santosh_marne94/" },
+//             ].map(({ Icon, url }, i) => (
+//               <a
+//                 key={i}
+//                 href={url}
+//                 target="_blank"
+//                 rel="noopener noreferrer"
+//                 className="w-9 h-9 flex items-center justify-center bg-white/10 rounded-full hover:bg-blue-800 transition cursor-pointer"
+//               >
+//                 <Icon className="text-sm" />
+//               </a>
+//             ))}
 //           </div>
 //         </div>
 
@@ -118,6 +121,30 @@
 //             <div className="flex items-center gap-3">
 //               <FaEnvelope className="text-blue-400" />
 //               <p>santoshmarnenew@gmail.com</p>
+//             </div>
+
+//             <div className="flex items-center gap-3">
+//               <FaGlobe className="text-blue-400" />
+//               <a
+//                 href="https://smagroandclothes.com"
+//                 target="_blank"
+//                 rel="noopener noreferrer"
+//                 className="hover:text-blue-400 transition"
+//               >
+//                 smagroandclothes.com
+//               </a>
+//             </div>
+
+//             <div className="flex items-center gap-3">
+//               <FaGlobe className="text-blue-400" />
+//               <a
+//                 href="https://smitsoftwareandsolutions.com"
+//                 target="_blank"
+//                 rel="noopener noreferrer"
+//                 className="hover:text-blue-400 transition"
+//               >
+//                 smitsoftwareandsolutions.com
+//               </a>
 //             </div>
 //           </div>
 //         </div>
@@ -287,15 +314,24 @@ const Footer = () => {
 
       </div>
 
-      <div className="border-t border-white/10 mt-10 pt-6 text-center text-sm text-gray-500">
-        © {new Date().getFullYear()} SM IT Software and Solutions. All rights reserved.
+      <div className="border-t border-white/10 mt-10 pt-6 px-6 max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-3 text-sm text-gray-500">
+        <p>
+          © {new Date().getFullYear()} SM IT Software and Solutions. All rights reserved.
+        </p>
+        <p>
+          Develop By{" "}
+          <a
+            href="https://www.legalpapersindia.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-blue-400 transition"
+          >
+            Legal Papers India
+          </a>
+        </p>
       </div>
     </footer>
   );
 };
 
 export default Footer;
-
-
-
-
